@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Butchery System - Order Management</title>
+</head>
+<body>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+*{
+    align-items:center;
+}
+		header {
+			background-color: #0080c5;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 2.5em;
+		}
+
+		nav {
+			background-color: #f2f2f2;
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+		}
+
+		nav a {
+			color: #333;
+			font-weight: bold;
+			margin: 0 10px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		nav a:hover {
+			color: #0080c5;
+		}
+
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px;
+		}
+h2{
+    text-align:center;
+}
+h3{
+    text-align:center;
+}
+h4{
+text-align:center;
+}
+h5{
+    text-align: center;
+}
+		.product {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			margin: 20px;
+			padding: 20px;
+			width: 300px;
+		}
+
+		.product h2 {
+			margin: 0;
+			font-size: 1.5em;
+		}
+
+		.product p {
+			margin: 10px 0;
+		}
+
+		.product button {
+			background-color: #0080c5;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+			font-size: 1.2em;
+			padding: 10px;
+		}
+
+		.product button:hover {
+			background-color: #004e75;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		footer p {
+			margin: 0;
+		}
+	</style>
+    <header>  
+	<h1>Butchery System - Order Management</h1>
+    <nav>
+        <a href="homefaisal.html">Home</a>
+        <a href="product page.html">Products</a>
+        <a href="orders.html">Orders</a>
+        <a href="contact us.html">Contact Us</a>
+    </nav>
+	<table>
+		<thead>
+			<tr>
+				<th>Order ID</th>
+				<th>Customer Name</th>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Status</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John Doe</td>
+				<td>Beef</td>
+				<td>2kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jane Smith</td>
+				<td>Chicken</td>
+				<td>1kg</td>
+				<td>Delivered</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Bob Johnson</td>
+				<td>Pork</td>
+				<td>3kg</td>
+				<td>Cancelled</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>John Onyango</td>
+				<td>Beef</td>
+				<td>5kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Edel Quinn</td>
+				<td>Chicken</td>
+				<td>3kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Pius Nyamita</td>
+				<td>Beef</td>
+				<td>15kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Vivian Gichure</td>
+				<td>Fish</td>
+				<td>1kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Benson Oduor</td>
+				<td>Fish</td>
+				<td>2kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Naruto Uzumaki</td>
+				<td>lamb</td>
+				<td>10kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Sasuke Uchiha</td>
+				<td>Chicken</td>
+				<td>6kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>Minato Namikaze</td>
+				<td>Sea food</td>
+				<td>4kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>Dominik Torreto</td>
+				<td>Beef</td>
+				<td>15kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>John Gathoni</td>
+				<td>pork</td>
+				<td>25kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>John Mustafa</td>
+				<td>Chicken</td>
+				<td>2kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>15</td>
+				<td>John Doe</td>
+				<td>sea food</td>
+				<td>2kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td>Faisal Zaid</td>
+				<td>Beef</td>
+				<td>13kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>17</td>
+				<td>Esther Anjira</td>
+				<td>pork</td>
+				<td>5kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+			<tr>
+				<td>18</td>
+				<td>Hamid Zaid</td>
+				<td>lamb</td>
+				<td>6kg</td>
+				<td>Processing</td>
+				<td><button>order</button></td>
+			</tr>
+		</tbody>
+	</table>
+	<button>Add New Order</button>
+    <footer>
+        <p>&copy; 2023 My Butchery System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
